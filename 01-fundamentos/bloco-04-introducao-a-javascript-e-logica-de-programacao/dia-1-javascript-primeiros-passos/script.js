@@ -82,11 +82,56 @@ let todosAngulosPositivos =  angulo1 > 0 && angulo2 > 0 && angulo3 > 0;
 
 console.log("A soma dos ângulos internos são válidos para um triângulo?")
 if(todosAngulosPositivos){
-    if(somaAngulos = somaTrue){
-        console.log(true);
-    }else {
-        console.log(false);
-    }
+if(somaAngulos = somaTrue){
+    console.log(true);
 }else {
-    console.log("Erro! Ângulo inválido.")
+    console.log(false);
+}
+}else {
+console.log("Erro! Ângulo inválido.")
+}
+
+// 7. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+// Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+// Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case) .
+// Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+// Exemplo: bishop (bispo) -> diagonals (diagonais)
+
+
+
+// 8. Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+const nota = 43;
+
+if (nota < 0 || nota > 100) {
+  console.log("Erro! Nota incorreta!");
+} else if (grade >= 90) {
+  console.log("A");
+} else if (grade >= 80) {
+  console.log("B");
+} else if (grade >= 70) {
+  console.log("C");
+} else if (grade >= 60) {
+  console.log("D");
+} else if (grade >= 50) {
+  console.log("E");
+} else {
+  console.log("F");
+}
+
+// 9. Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false . Bonus: use somente um if .
+
+const q = 59;
+const w = 964;
+const e = 63;
+
+if(q % 2 === 0 ||  w % 2 === 0 || e % 2 === 0){
+    console.log()
 }

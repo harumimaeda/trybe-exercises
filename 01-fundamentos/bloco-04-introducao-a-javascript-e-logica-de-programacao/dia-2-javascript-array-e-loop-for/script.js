@@ -16,5 +16,16 @@ console.log('Exercício 2: ' + result);
 
 // 3. Calcule e imprima a média aritmética dos valores contidos no array; A média aritmética é o resultado da soma de todos os elementos divido pelo número total de elementos.
 
+let average = result / numbers.length
 
-console.log('Exercício 3: ' + result / numbers.length);
+console.log('Exercício 3: ' + average);
+
+// 4. Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";
+
+if(average > 20){
+    console.log("Valor maior que 20.")
+}else if(average < 20){
+    console.log("Valor menor que 20.")
+}else{
+    console.log("Erro!")
+}

@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* MainNav */
+
+#mainNav{
+    background-color: pink;
+    text-align: center;
+}
+
+#mainNav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#mainNav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+#mainNav ul li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+
+/* Sections */
+
+body{
+    padding: 20px;
+}
+
+#generalInfo{
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid yellow;
+}
+
+#superVision{
+    margin: 10px 0;
+    border: 1px solid red;
+}
+
+#references{
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid blue;
+}
+
+.text{
+    border: 1px solid purple;
+    padding: 20px;
+    display: inline-block;
+    width: 50%;
+}
+
+/* Images */
+
+.imageBox{
+    border: 1px solid salmon;
+    padding: 20px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.image{
+    width: 80%;
+    
+}

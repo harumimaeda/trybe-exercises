@@ -105,4 +105,4 @@ leitor.livrosFavoritos.push(
   }
 )
 
-console.log(leitor[property], leitor);
+console.log(leitor);

@@ -62,6 +62,11 @@
         "Exercício 5.1 - JavaScript";
       //  05. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
       //  06. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      let paragrafo = document.getElementsByTagName("p");
+
+      for (let i = 0; i < paragrafo.length; i += 1) {
+        console.log(paragrafo[i]);
+      }
     </script>
   </body>
 </html>

@@ -2,6 +2,7 @@
 console.log(document.getElementById("elementoOndeVoceEsta"));
 
 // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+let estilo = "bac"
 // document.getElementById("elementoOndeVoceEsta").firstChild.style.backgroundColor = "pink";
 
 // Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
@@ -40,8 +41,13 @@ let primeiroDoPrimeiro = document.createElement("div");
 
 primeiroFilhoDoFilho.appendChild(primeiroDoPrimeiro);
 
+primeiroDoPrimeiro.className = "primeiroDoPrimeiro";
 primeiroDoPrimeiro.innerHTML = "primeiroDoPrimeiro";
 
 // A partir desse filho criado, acesse terceiroFilho.
 
-console.log(document.getElementById("primeiroDoPrimeiro").parentElement.nextElementSibling);
+// console.log(document.getElementById("primeiroDoPrimeiro").parentElement.nextElementSibling);
+
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+

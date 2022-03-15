@@ -117,15 +117,20 @@
 
       document.getElementsByClassName("right-content")[0].appendChild(list);
       
-      for(let i = 0; i < listItems.length; i += 1 ) {
+      for(let i = 0; i < listItems.length; i += 1) {
         let listItem = document.createElement("li");
         document.getElementsByTagName("ul")[0].appendChild(listItem);
         listItem.innerText = listItems[i];
       }
-      
+
       document.getElementsByClassName("right-content")[0].appendChild(list);
       
       // 9. Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      for(let i = 0; i < 3; i += 1) {
+        let heading3 = document.createElement("h3");
+        document.getElementsByClassName("main-content")[0].appendChild(heading3);
+      }
+
     </script>
   </body>
 </html>

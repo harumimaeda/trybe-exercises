@@ -11,6 +11,16 @@ const myWebpage = document.getElementById('my-spotrybefy');
 No CSS, existe uma classe (tech) na linha 68 que recebe uma declaração que reposiciona a classe verticalmente. */
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+function addTechClass(event) {
+  const techElement = document.querySelector('.tech');
+  techElement.classList.remove('tech');
+  event.target.classList.add('tech');
+}
+
+firstLi.addEventListener('click', addTechClass);
+secondLi.addEventListener('click', addTechClass);
+thirdLi.addEventListener('click', addTechClass);
+
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento

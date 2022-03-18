@@ -38,6 +38,7 @@ input.addEventListener('input', function(event) {
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
+// Source: https://stackoverflow.com/questions/13071967/adding-an-onclick-function-to-go-to-url-in-javascript
 function doubleClickPortfolio(event) {
   let portfolio = 'https://harumimaeda.github.io/trybe-portfolio/';
   window.open(portfolio);
@@ -45,11 +46,12 @@ function doubleClickPortfolio(event) {
 
 myWebpage.addEventListener('dblclick', doubleClickPortfolio);
 
-// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-// a cor do mesmo;
+// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere a cor do mesmo;
+myWebpage.addEventListener('mouseover', function() {
+  this.style.color = '#006dfb';
+});
 
 // Segue abaixo um exemplo do uso de event.target:
-
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.

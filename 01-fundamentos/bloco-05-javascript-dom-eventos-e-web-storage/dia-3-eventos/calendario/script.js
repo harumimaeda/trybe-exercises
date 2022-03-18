@@ -92,3 +92,24 @@ function sextou(string) {
 }
 
 sextou('Sexta-feira');
+
+// 5. Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+function colorFridays(event) {
+  const fridays = document.querySelectorAll('.friday');
+  let newBackgroundColor = 'rgb(238,238,238)';
+  let newColor = 'olive';
+
+  for (i = 0; i <= fridays.length; i += 1) {
+    if (fridays[i].style.backgroundColor === newColor) {
+      fridays[i].style.backgroundColor = newBackgroundColor;
+      fridays[i].style.color = '#666';
+    } else {
+      fridays[i].style.backgroundColor = newColor;
+      fridays[i].style.color = 'white';
+    }
+    }
+  }
+
+document.getElementById('btn-friday').addEventListener('click', colorFridays);

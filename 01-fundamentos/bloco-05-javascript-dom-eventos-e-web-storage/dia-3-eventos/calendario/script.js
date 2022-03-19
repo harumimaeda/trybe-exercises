@@ -115,10 +115,23 @@ function colorFridays(event) {
 document.getElementById('btn-friday').addEventListener('click', colorFridays);
 
 // 6. Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+// Source: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
-function zoom() {
-
+function zoom(){
+  // codigo
 }
 
 // For para rodar em todos os dias?
-document.getElementsByClassName('days').addEventListener('mouseover', zoom);
+// document.getElementsByClassName('days').addEventListener('mouseover', zoom);
+
+// Exercício 7:
+// Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+
+function tarefa(nameTask) {
+  const newTask = document.createElement('span');
+  document.querySelector('.my-tasks').appendChild(newTask);
+  newTask.innerText = nameTask;
+}
+
+tarefa('cozinhar');

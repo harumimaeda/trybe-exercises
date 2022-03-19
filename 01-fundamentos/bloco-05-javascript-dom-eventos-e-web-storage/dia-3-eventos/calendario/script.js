@@ -115,10 +115,73 @@ function colorFridays(event) {
 document.getElementById('btn-friday').addEventListener('click', colorFridays);
 
 // 6. Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+// Source: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
 
-function zoom() {
-
+function zoom(){
+  // codigo
 }
 
 // For para rodar em todos os dias?
-document.getElementsByClassName('days').addEventListener('mouseover', zoom);
+// document.getElementsByClassName('days').addEventListener('mouseover', zoom);
+
+// 7. Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa. O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+
+function tarefa(nameTask) {
+  const newTask = document.createElement('span');
+  document.querySelector('.my-tasks').appendChild(newTask);
+  newTask.innerText = nameTask;
+}
+
+tarefa('cozinhar');
+
+// 8. Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
+// O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada. O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+
+function colorTask(color) {
+  const newTask = document.createElement('div');
+  document.querySelector('.my-tasks').appendChild(newTask);
+  newTask.className = 'task';
+  newTask.style.backgroundColor = color;
+}
+
+colorTask('red');
+
+// 9. Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
+
+function addEvent(){
+  // code;
+}
+
+// 10. Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada. Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
+
+function colorSubtitle(){
+  const days = document.querySelectorAll('.day');
+  let defaultColor = 'rgb(238,238,238)';
+  let newLegendColor = 'color';
+
+  for(i = 0 <= days.length; i +=1 ) {
+    if(days[i].style.backgroundColor === defaultColor) {
+      days[i].style.backgroundColor = newLegendColor;
+    }
+  }
+}
+document.querySelectorAll('.day').addEventListener('click', colorSubtitle);
+
+function colorFridays(event) {
+  const fridays = document.querySelectorAll('.friday');
+  let newBackgroundColor = 'rgb(238,238,238)';
+  let newColor = 'olive';
+
+  for (i = 0; i <= fridays.length; i += 1) {
+    if (fridays[i].style.backgroundColor === newColor) {
+      fridays[i].style.backgroundColor = newBackgroundColor;
+      fridays[i].style.color = '#666';
+    } else {
+      fridays[i].style.backgroundColor = newColor;
+      fridays[i].style.color = 'white';
+    }
+    }
+  }
+
+document.getElementById('btn-friday').addEventListener('click', colorFridays);

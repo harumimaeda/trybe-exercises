@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>6.1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="GET">
+      <!-- 1 - Adicione os campos de entrada para email e senha. -->
+      <!-- 4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha. -->
+      <!-- 5 - Adicione o atributo required para os campos de email e senha. -->
+      <!-- 6 - Adicione o atributo autocomplete="off" para o campo de email.  -->
+      <!-- 7 - Adicione o atributo autofocus para o campo de email. -->
+      <label for="email">E-mail: </label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Digite seu email"
+        required
+        name="email"
+        autocomplete="off"
+        autofocus
+      />
+      <label for="password">Senha: </label>
+      <input
+        type="password"
+        placeholder="Digite sua senha"
+        required
+        name="password"
+        id="password"
+      />
+      <!-- 2 - Adicione um checkbox com o texto Lembre-me. -->
+      <label for="rememberMe">
+        <input type="checkbox" id="rememberMe" />Lembre-me
+      </label>
+      <!-- 3 - Adicione um botão com o texto Entrar. -->
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

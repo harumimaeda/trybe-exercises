@@ -76,7 +76,9 @@ const books = [
 const reduceNames = books.reduce((result, book) => {
   // return result.concat(', ', book.author.name);
   // return (result + ', ' + book.author.name);
-  return `${result}, ${book.author.name}`;
-}, "");
+  // return `${result}, ${book.author.name}`;
+  console.log(elements.join('-'));
+  return result.join
+},{});
 
 console.log(reduceNames);

@@ -160,7 +160,7 @@ function colorSubtitle(){
   let defaultColor = 'rgb(238,238,238)';
   let newLegendColor = 'color';
 
-  for(i = 0 <= days.length; i +=1 ) {
+  for(i = 0 <= days.length; i +=1;) {
     if(days[i].style.backgroundColor === defaultColor) {
       days[i].style.backgroundColor = newLegendColor;
     }

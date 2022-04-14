@@ -17,3 +17,7 @@ const person = {
 const { nationality = 'Brazilian' } = person;
 // console.log(nationality); // Brazilian
 console.log(person);
+
+const greeting = (user) => console.log(`Welcome ${user}!`);
+
+greeting(); // Welcome undefined!
